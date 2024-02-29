@@ -19,7 +19,7 @@ switch (new Date().getDay()) {
   case 5:
     day = "Friday";
     break;
-  case 6:
+  default:
     day = "Saturday";
     break;
 }
@@ -27,3 +27,16 @@ switch (new Date().getDay()) {
 document.body.innerHTML = `
   Today is ${day}
 `;
+
+function greet(name, message) {
+  val = message.concat(" ", name);
+  return val;
+}
+
+let message = "welcome";
+let fName = "Samuel";
+
+console.log(greet(fName, message));
+console.log(greet(fName, message));
+console.log(greet(fName, message));
+console.log(greet(fName, message));
